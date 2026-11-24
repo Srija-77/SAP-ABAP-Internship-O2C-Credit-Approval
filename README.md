@@ -41,8 +41,11 @@ flowchart TD
     L -- Reject --> O[Set Rejection Reason ABGRU on Order Items]
     O --> P[Update ZORDER_AUDIT Status = 'REJECTED' & Notify Sales]
     P --> Z
+```
 
 ## Three-Tier SAP S/4HANA Technical Architecture
+
+```mermaid
 
 flowchart TB
     subgraph Presentation["1. Presentation Layer (UI)"]
@@ -77,3 +80,4 @@ flowchart TB
     CLS --> ZTBL2
     ALV <--> ZTBL2
     BAPI --> STD
+```
